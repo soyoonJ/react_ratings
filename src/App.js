@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Home from './Home';
+import Detail from './Detail';
+import NotFound from "./NotFound";
+import './style.css';
+
+import { Route, Switch } from "react-router-dom";
+
 
 function App() {
+  const [list, setList] = React.useState(["월", "화", "수", "목", "금", "토", "일"]);
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="mainBox">
+      <Switch>
+        <Route path="/" exact render={(props) => <Home list={list} />} />
+        <Route path="/detail/:index" component={Detail} render={(props) => <Detail list={list} />} />
+        <Route component={NotFound} />
+      </Switch>
+      </div>
     </div>
   );
 }
+
+
 
 export default App;

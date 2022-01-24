@@ -1,0 +1,59 @@
+.App {
+
+    height: 100vh;
+    width: 100vw;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBox {
+    width: 400px;
+    height: 60vh;
+    margin: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 60px 20px 130px;
+    
+}
+
+.weekSummary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.detailSubTitle {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.makeCircle {
+    width: 35px;
+    height: 35px;
+    background-color: #ddd;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 1rem solid transparent;
+    border-top: 1rem solid transparent;
+    border-left: 1.5rem solid purple;
+  }
+
+.btnStyle {
+    background-color: purple;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    margin-top: 20px;
+    padding: 15px 60px;
+}
