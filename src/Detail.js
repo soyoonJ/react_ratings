@@ -19,7 +19,12 @@ const Detail = (props) => {
             }}>{day_name.index}요일</span> 평점 남기기
         </div>
         <div className="weekSummary">
-            <div className="makeCircle"></div>
+            <div className="makeCircle"
+            //     onClick={() => {
+                
+
+
+            // }}></div>
             <div className="makeCircle"></div>
             <div className="makeCircle"></div>
             <div className="makeCircle"></div>
