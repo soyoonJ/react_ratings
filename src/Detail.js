@@ -14,7 +14,7 @@ const Detail = (props) => {
     // const array2 = [0,1,2,3,4];
     
     const [count, setCount] = React.useState();
-    const circle_count = Array.from({ length:count }, (v, i) => i);
+    // const circle_count = Array.from({ length:count }, (v, i) => i);
     // const ClickRating = (index) => {
 
     //     const [clicked, setClicked] = useState([false, false, false, false, false]);
@@ -41,7 +41,7 @@ const Detail = (props) => {
         <>
         <div className="detailSubTitle">
             <span style={{
-                backgroundColor: "orange",
+                backgroundColor: "pink",
                 borderRadius: "5px",
                 padding: "5px",
                 color: "white",
@@ -52,7 +52,7 @@ const Detail = (props) => {
                     return (
                     <div className="makeCircle"
                     style={{
-                        background:(i<count+1)?"yellow":"gray"
+                        background:(i<count+1)?"yellow":"#ddd"
                     }}
                     key={i} id={i}
                     onClick={()=> {

@@ -16,13 +16,13 @@ const circle_count = Array.from({ length: 7 }, (v, i) => i);
         const randomNum = Math.floor(Math.random() * 5)
         return (
             <div className="weekSummary" key={idx}>
-              <p>{day_lists[idx]}</p>
+              <p className="mainFont">{day_lists[idx]}</p>
               
               {array.map((el, i)=> {
                 return (
                   <div className="makeCircle" 
                   style={{
-                    backgroundColor:(i<=randomNum)?"yellow":"gray"
+                    backgroundColor:(i<=randomNum)?"yellow":"#ddd"
                   }}
                   key={i}></div>
                 )
