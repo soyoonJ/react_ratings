@@ -35,7 +35,7 @@
 .makeCircle {
     width: 35px;
     height: 35px;
-    background-color: #ddd;
+    /* background-color: #ddd; */
     margin: 5px;
     border-radius: 50%;
 }
@@ -47,6 +47,17 @@
     border-top: 1rem solid transparent;
     border-left: 1.5rem solid purple;
   }
+
+.yellowCircle {
+    width: 35px;
+    height: 35px;
+    background-color: yellow;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+
+
 
 .btnStyle {
     background-color: purple;
